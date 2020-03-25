@@ -1,0 +1,13 @@
+*.exe
+*.suo
+*.sln
+*.vcxproj.*
+*.vcxproj
+common/*/Debug/
+common/*/.vs/
+
+common/*/Debug/
+common/*/.vs/
+
+interview/*/Debug/
+interview/*/.vs/
