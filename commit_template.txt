@@ -1,0 +1,4 @@
+code commit:
+common/
+interview/
+
