@@ -2,10 +2,77 @@
 //
 
 #include <iostream>
+#define PRINTF //printf
 
 char *longestPalindrome(char *s)
 {
+    int **dp = NULL;
+    char *result = NULL;
+    int str_len = strlen(s);
+    int i, j, loop;
+    int left = 0;
+    int right = 0;
+    int max_len = 1;
 
+    PRINTF("\r\nstrlen=%d", str_len);
+
+    if (str_len == 0) {
+        return NULL;
+    } else if (str_len == 1) {
+        return s;
+    }
+
+    dp = (int **)malloc(sizeof(int *) * str_len);
+    for (loop = 0; loop < str_len; loop++) {
+        dp[loop] = (int *)malloc(sizeof(int) * str_len);
+        memset(dp[loop], 0, sizeof(int) * str_len);
+    }
+
+    for (i = str_len - 1; i >= 0; i--) {
+        for (j = i; j < str_len; j++) {
+            PRINTF("\r\n i=%d, j=%d", i, j);
+            if (s[i] == s[j]) {
+                if (i == j) {
+                    dp[i][j] = 1;
+                    goto HANDLE_MAX;
+                }
+
+                if (i + 1 == j) {
+                    dp[i][j] = 2;
+                    goto HANDLE_MAX;
+                }
+
+                if (dp[i + 1][j - 1] != 0) {
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                    goto HANDLE_MAX;
+                }
+            }
+
+        HANDLE_MAX:
+            if (dp[i][j] > max_len) {
+                max_len = dp[i][j];
+                left = i;
+                right = j;
+                PRINTF("\r\nfind max, len=%d, left=%d, right=%d", max_len, left, right);
+            }
+        }
+    }
+
+    PRINTF("\r\ndp=\n");
+    for (i = 0; i < str_len; i++) {
+        for (j = 0; j < str_len; j++) {
+            PRINTF("%2d ", dp[i][j]);
+        }
+
+        PRINTF("\n");
+    }
+
+    PRINTF("\r\nmax_len=%d, left=%d, right=%d", max_len, left, right);
+
+    result = (char *)malloc(right - left + 2);
+    memcpy(result, &(s[left]), right - left + 1);
+    result[right - left + 1] = '\0';
+    return result;
 }
 
 int main()
