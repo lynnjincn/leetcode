@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#define SOLUTION_2 1
+
 #if SOLUTION_1
 void update_result(int *result, int num)
 {
@@ -109,6 +111,7 @@ int longestValidParentheses(char * s)
 }
 #endif
 
+#if SOLUTION_2
 #define PRINTF printf
 #define MAX(a,b) ((a) > (b) ? (a) : (b))
 #define MIN(a,b) ((a) < (b) ? (a) : (b))
@@ -200,6 +203,7 @@ int longestValidParentheses(char * s){
 
     return result;
 }
+#endif
 
 int main()
 {
