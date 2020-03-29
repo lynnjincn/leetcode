@@ -23,12 +23,20 @@ void debug_printf_string(char *s, int start ,int end, int line_num)
     }
 }
 
+void update_max_end(int start, int end, int *max_end)
+{
+    if (end > max_end[start]) {
+        max_end[start] = end;
+    }
+}
+
 int longestValidParentheses(char * s)
 {
     int len = strlen(s);
     int result = 0;
     int i, start, end, temp_end;
     char **dp;
+    int *max_end;
 
     if (len < 2) {
         return 0;
@@ -45,6 +53,9 @@ int longestValidParentheses(char * s)
                     memset(dp[i], false, sizeof(char) * len);
                 }
             }
+
+            max_end = (int *)malloc(sizeof(int) * len);
+            memset(max_end, 0, sizeof(int) * len);
         }
     }
 
@@ -55,29 +66,22 @@ int longestValidParentheses(char * s)
                 if (start + 1 == end) {
                     if ((s[start] == '(') && (s[end] == ')')) {
                         dp[start][end] = true;
+                        update_max_end(start ,end, max_end);
                         PRINTF("\n[%3d]true mark", __LINE__);
                     }
                 } else {
                     if (dp[start + 1][end - 1] == true) {
                         dp[start][end] = true;
+                        update_max_end(start ,end, max_end);
                         PRINTF("\n[%3d]true mark", __LINE__);
                         continue;
                     }
 
-                    temp_end = -1;
-                    for (i = start + 1; i < end; i++) {
-                        if (dp[start][i] == true) {
-                            temp_end = i;
-                            PRINTF("\n[%3d]find last true mark, temp_end=%d", __LINE__, temp_end);
-                        }
-                    }
-
-                    if (temp_end == end) {
-                        PRINTF("\n[%3d]false mark, temp_start=%d", __LINE__, temp_end);
-                        continue;
-                    } else {
+                    if (max_end[start] != 0) {
+                        temp_end = max_end[start];
                         if (dp[temp_end + 1][end] == true) {
                             dp[start][end] = true;
+                            update_max_end(start ,end, max_end); 
                             PRINTF("\n[%3d]true mark", __LINE__);
                         }
                     }
