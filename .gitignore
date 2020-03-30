@@ -5,6 +5,7 @@
 *.vcxproj
 common/*/Debug/
 common/*/.vs/
+common/*/.vscode/
 
 common/*/Debug/
 common/*/.vs/
