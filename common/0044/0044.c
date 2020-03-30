@@ -1,6 +1,7 @@
 // https://leetcode-cn.com/problems/wildcard-matching/
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #define PRINTF printf
 
@@ -85,16 +86,8 @@ char isMatch(char * s, char * p){
             }
             else {
                 PRINTF("\n[%3d]s[i]=%c, p[j]=%c, dp_prev=%d", __LINE__, s[i], p[j], dp[j_loop - 1][i_loop - 1]);
-                if (s[i] == p[j]) {
+                if ((s[i] == p[j]) || (p[j] == '?')) {
                     dp[j_loop][i_loop] = dp[j_loop - 1][i_loop - 1];
-                } else if (p[j] == '?') {
-                    dp[j_loop][i_loop] = dp[j_loop - 1][i_loop - 1];
-                    /*if ((j > 0) && (p[j - 1] == '*') && (dp[j_loop - 1][i_loop] == TRUE)) {
-                        dp[j_loop][i_loop] = TRUE;
-                    } else {
-                        
-                        
-                    }*/
                 }
             }
         }
@@ -120,15 +113,18 @@ char isMatch(char * s, char * p){
     return dp[p_len][s_len];
 }
 
-/*
-""
-"
-*/
-
 int main()
 {
-    char string[] = "ab";
-    char pattern[] = "ab**";
+    char string[256];
+    char pattern[256];
+
+    memset(string, '\0', 256);
+    memset(pattern, '\0', 256);
+
+    printf("input string:\n");
+    gets(string);
+    printf("\ninput pattern:\n");
+    gets(pattern);
 
     printf("\n[%3d]Result=%d", __LINE__, isMatch(string, pattern));
     system("pause");
