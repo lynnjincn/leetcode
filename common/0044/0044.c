@@ -1,6 +1,6 @@
 // https://leetcode-cn.com/problems/wildcard-matching/
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #define PRINTF printf
@@ -8,7 +8,7 @@
 #define FALSE 0
 #define TRUE 1
 
-char isMatch(char * s, char * p){
+char isMatch(char *s, char *p) {
     int s_len = strlen(s);
     int p_len = strlen(p);
     int i_loop, j_loop, i, j;
@@ -55,7 +55,7 @@ char isMatch(char * s, char * p){
     }
 
     for (j_loop = 1; j_loop < p_len + 1; j_loop++) {
-        for (i_loop = 1; i_loop < s_len + 1; i_loop++){
+        for (i_loop = 1; i_loop < s_len + 1; i_loop++) {
             i = i_loop - 1;
             j = j_loop - 1;
             PRINTF("\n[%3d]i=%d, j=%d", __LINE__, i, j);
@@ -83,8 +83,7 @@ char isMatch(char * s, char * p){
                     dp[j_loop][i_loop] = TRUE;
                     continue;
                 }
-            }
-            else {
+            } else {
                 PRINTF("\n[%3d]s[i]=%c, p[j]=%c, dp_prev=%d", __LINE__, s[i], p[j], dp[j_loop - 1][i_loop - 1]);
                 if ((s[i] == p[j]) || (p[j] == '?')) {
                     dp[j_loop][i_loop] = dp[j_loop - 1][i_loop - 1];
@@ -113,8 +112,7 @@ char isMatch(char * s, char * p){
     return dp[p_len][s_len];
 }
 
-int main()
-{
+int main() {
     char string[256];
     char pattern[256];
 
