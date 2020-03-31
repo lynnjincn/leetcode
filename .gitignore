@@ -6,7 +6,7 @@
 common/*/Debug/
 common/*/.vs/
 common/*/.vscode/
-
+common/*/.clang-format/
 common/*/Debug/
 common/*/.vs/
 
