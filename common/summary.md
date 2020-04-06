@@ -34,4 +34,7 @@
 #### 快慢指针
 - [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
+#### 单调栈（出现扰乱单调性的元素准备入栈时，制定对应的处理策略。所有元素处理完成之后，针对留在栈中的元素制定对应的处理策略）
+- [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
+
 ## 遗留事务
