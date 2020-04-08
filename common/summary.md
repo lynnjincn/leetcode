@@ -2,6 +2,9 @@
 
 ## 题型整理
 ### 特殊技巧型
+#### [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
+- Kadane算法
+
 #### [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/submissions/)
 - 计算面积的技巧
 - 动态规划
