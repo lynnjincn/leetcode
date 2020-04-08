@@ -3,6 +3,10 @@
 
 #define TWO_DIMENSIONAL_ARRAY_INPUT_SAMPLE (1)  //二维数组输入样例
 
+#define PRINTF printf
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+
 int main()
 {
 #if TWO_DIMENSIONAL_ARRAY_INPUT_SAMPLE
