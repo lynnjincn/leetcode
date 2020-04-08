@@ -16,12 +16,14 @@
 1.  单字符串内特殊条件遍历
 - [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
 - [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+- [91. 解码方法](https://leetcode-cn.com/problems/decode-ways/)
 
 2.  两个字符串对比、查询
 - [10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
 - [44. 通配符匹配](https://leetcode-cn.com/problems/wildcard-matching/)
 - [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 - [87. 扰乱字符串](https://leetcode-cn.com/problems/scramble-string/)
+- [97. 交错字符串](https://leetcode-cn.com/problems/interleaving-string/)
 
 3. 地图遍历（还有可能使用广度、深度优先遍历）
 - [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
