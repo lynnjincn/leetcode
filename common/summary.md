@@ -24,6 +24,7 @@
 - [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 - [87. 扰乱字符串](https://leetcode-cn.com/problems/scramble-string/)
 - [97. 交错字符串](https://leetcode-cn.com/problems/interleaving-string/)
+- [115. 不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)
 
 3. 地图遍历（还有可能使用广度、深度优先遍历）
 - [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
@@ -31,6 +32,7 @@
 
 4. 逐层剥离（与分治法思想内核相同，但是又不适用前面几种典型模式）
 - [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+- [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) [`解题思路`](0121/0121.md)
 - [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
 #### 字典排序
