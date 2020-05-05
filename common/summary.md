@@ -3,7 +3,9 @@
 ## 题型整理
 ### 特殊技巧型
 #### [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
+#### [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
 - Kadane算法
+*核心思想都是暂时保存住当前最优以及历史最优*
 
 #### [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/submissions/)
 - 计算面积的技巧
@@ -17,6 +19,7 @@
 - [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
 - [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 - [91. 解码方法](https://leetcode-cn.com/problems/decode-ways/)
+- [132. 分割回文串 II](https://leetcode-cn.com/problems/palindrome-partitioning-ii/)
 
 2.  两个字符串对比、查询
 - [10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
@@ -34,6 +37,7 @@
 4. 逐层剥离（与分治法思想内核相同，但是又不适用前面几种典型模式）
 - [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 - [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) [`解题思路`](0121/0121.md)
+- [123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)
 - [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
 >动态规划的小思考：
