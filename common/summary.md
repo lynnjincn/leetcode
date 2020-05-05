@@ -38,6 +38,9 @@
 - [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 - [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) [`解题思路`](0121/0121.md)
 - [123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)
+- [188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
+- [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
+- [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)
 - [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
 >动态规划的小思考：
