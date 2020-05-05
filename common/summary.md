@@ -28,10 +28,14 @@
 3. 地图遍历（还有可能使用广度、深度优先遍历）
 - [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
 - [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
+- [174. 地下城游戏](https://leetcode-cn.com/problems/dungeon-game/) ***逆序可能是解决方案哦***
 
 4. 逐层剥离（与分治法思想内核相同，但是又不适用前面几种典型模式）
 - [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 - [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+
+>动态规划的小思考：
+>- 逆序可能解决一些正序处理有困难的问题，可以作为动态规划**自顶向下**和**自底向上**的具体实现
 
 #### 字典排序
 - [820. 单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)
