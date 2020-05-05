@@ -48,9 +48,11 @@
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
 5. 遍历形式的动态规划
-- [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
 - [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
 - [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+
+6. 其他
+- [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
 
 >动态规划的小思考：
 >- 逆序可能解决一些正序处理有困难的问题，可以作为动态规划**自顶向下**和**自底向上**的具体实现
