@@ -47,6 +47,7 @@
 - [312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/) ***逆序可能是解决方案哦***
 - [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/)
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
+- [354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
 
 5. 遍历形式的动态规划
 - [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
