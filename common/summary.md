@@ -21,6 +21,7 @@
 - [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 - [91. 解码方法](https://leetcode-cn.com/problems/decode-ways/)
 - [132. 分割回文串 II](https://leetcode-cn.com/problems/palindrome-partitioning-ii/)
+- [139. 单词拆分](https://leetcode-cn.com/problems/word-break/)
 
 2.  两个字符串对比、查询
 - [10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
