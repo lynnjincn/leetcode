@@ -57,6 +57,9 @@
 >动态规划的小思考：
 >- 逆序可能解决一些正序处理有困难的问题，可以作为动态规划**自顶向下**和**自底向上**的具体实现
 
+#### hash链表
+- [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) [*代码实现参考链接*](0030/0030.c)
+
 #### 字典排序
 - [820. 单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)
 
